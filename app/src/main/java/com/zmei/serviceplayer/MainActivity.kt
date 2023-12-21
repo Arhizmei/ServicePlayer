@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             startBtn.setOnClickListener {
                 startService(Intent(this@MainActivity, MyService::class.java))
             }
-            startBtn.setOnClickListener {
+            stopBtn.setOnClickListener {
                 stopService(Intent(this@MainActivity, MyService::class.java))
             }
         }
